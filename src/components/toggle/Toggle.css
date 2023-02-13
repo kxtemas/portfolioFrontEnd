@@ -1,0 +1,132 @@
+.position {
+  
+    left: 92%;
+    position: fixed;
+    z-index: 999;
+}
+
+.toggle {
+    height: 27px;
+    width: 52px;
+    border-radius: 50px;
+    margin: auto;
+    background-image: linear-gradient(lightgrey, skyblue);
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle.night {
+    background-image: linear-gradient(black, black);
+}
+
+.notch {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    box-shadow: 0 0 2px yellow;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.shape {
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.night .shape {
+    /* background: lightgrey; */
+    box-shadow: 0 0 5px 3px black;
+}
+
+.shape.sm {
+    height: 2px;
+    width: 15px;
+    top: 50%;
+    left: 60%;
+}
+
+.shape.md {
+    height: 3px;
+    width: 25px;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+}
+
+.shape.lg {
+    height: 4px;
+    width: 30px;
+    bottom: 17%;
+    left: 25%;
+}
+
+
+.night>.notch {
+    background: whitesmoke;
+    box-shadow: 0 0 2px whitesmoke;
+    transform: translate(25px, 0);
+}
+
+.night .shape.sm {
+    height: 2px;
+    width: 2px;
+    transform: translate(-12px, 0);
+}
+
+.night .shape.sm:first-of-type {
+    transform: translate(-22px, -3px);
+}
+
+.night .shape.md {
+    height: 3px;
+    width: 3px;
+    transform: translate(3px, 0);
+}
+
+.night .shape.lg {
+    height: 4px;
+    width: 4px;
+    transform: translate(-2px, 0);
+}
+
+
+/* .t {
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: rgb(65, 62, 62);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+}
+.t-icon-sun {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+.t-icon-moon {
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+}
+.t-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+} */
