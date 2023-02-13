@@ -20,7 +20,7 @@ function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  
+
   const submitHandler = async (e) => {
     e.preventDefault();
     if (!email || !subject || !message) {
@@ -47,12 +47,12 @@ function Contact() {
 
   return (
     <div className="c">
-        <ToastContainer position="bottom-center" limit={1} />
+      <ToastContainer position="bottom-center" limit={1} />
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-        <a id="Contact"></a>
-          <h1 className="c-title">Get in Touch</h1> 
+          <a id="Contact"></a>
+          <h1 className="c-title">Get in Touch</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} className="c-icon" alt="phone" />
@@ -67,12 +67,12 @@ function Contact() {
               Surprize, AZ
             </div>
             <div className="c-info-item">
-           <a href="https://github.com/kxtemas"><img src={Github} className="c-icon" alt="github" /></a>
-            /kxtemas
+              <a href="https://github.com/kxtemas"><img src={Github} className="c-icon" alt="github" /></a>
+              /kxtemas
             </div>
             <div className="c-info-item">
-            <a href="https://www.linkedin.com/in/katiemunoz01/"><img src={Link} className="c-icon" alt="link" /></a>
-          /Katiemunoz01
+              <a href="https://www.linkedin.com/in/katiemunoz01/"><img src={Link} className="c-icon" alt="link" /></a>
+              /Katiemunoz01
             </div>
           </div>
         </div>
@@ -81,33 +81,33 @@ function Contact() {
             <b>Let's Connect</b>
             <p></p>
             Thank you for visiting my portfolio! If you would like to get in touch with me, please feel free to send an email.
-             I would be happy to hear from you and answer any questions you may have. I look forward to connecting with you soon!
+            I would be happy to hear from you and answer any questions you may have. I look forward to connecting with you soon!
           </p>
           <p></p>
- 
+
           <form onSubmit={submitHandler}>
-          <label htmlFor="email">Email  </label>
-          <input
-          id="email"
-          style={{ backgroundColor: darkMode && "#333" }}
+            <label htmlFor="email">Email  </label>
+            <input
+              id="email"
+              style={{ backgroundColor: darkMode && "#333" }}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="email"
               name="email"
-          />
-          <p></p>
-         <label htmlFor="subject">Subject  </label>
+            />
+            <p></p>
+            <label htmlFor="subject">Subject  </label>
             <input
-                id="subject"
-                type="text"
-                onChange={(e) => setSubject(e.target.value)}
+              id="subject"
+              type="text"
+              onChange={(e) => setSubject(e.target.value)}
               style={{ backgroundColor: darkMode && "#333" }}
               placeholder="Subject"
               name="user_subject"
             />
             <p></p>
-               <label htmlFor="message">Message</label>
-               <textarea
+            <label htmlFor="message">Message</label>
+            <textarea
               id="message"
               onChange={(e) => setMessage(e.target.value)}
               style={{ backgroundColor: darkMode && "#333" }}
@@ -115,15 +115,15 @@ function Contact() {
               placeholder="Message"
               name="message"
             ></textarea>
-         <div>
-            <label></label>
-            <button disabled={loading} type="submit">
-              {loading ? 'Sending...' : 'Submit'}
-            </button>
-          </div>
+            <div>
+              <label></label>
+              <button disabled={loading} type="submit">
+                {loading ? 'Sending...' : 'Submit'}
+              </button>
+            </div>
           </form>
-          </div>
-      
+        </div>
+
       </div>
     </div>
   );

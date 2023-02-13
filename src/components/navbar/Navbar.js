@@ -15,7 +15,7 @@ export default function Navbar() {
           setIsNavExpanded(!isNavExpanded)
         }}
       >
- 
+
       </button>
       <div
         className={
@@ -24,19 +24,19 @@ export default function Navbar() {
       >
         <ul>
           <li>
-          <a href="#HOMEPAGE"> Home</a>
-            
+            <a href="#HOMEPAGE"> Home</a>
+
           </li>
-         
+
           <li>
             <a href="#About"> About </a>
-            
+
           </li>
           <li>
-            <a href="#Portfolio"> Portfolio </a>  
+            <a href="#Portfolio"> Portfolio </a>
           </li>
           <li>
-            <a href="#Contact"> Contact </a>  
+            <a href="#Contact"> Contact </a>
           </li>
         </ul>
       </div>

@@ -1,10 +1,9 @@
-.c{
+.c {
     height: 100vh;
     position: relative;
 }
 
-.c-bg
-{
+.c-bg {
     width: 20px;
     height: 100%;
     background-color: #59b256;
@@ -12,15 +11,16 @@
 
 }
 
-.c-wrapper
-{
+.c-wrapper {
     padding: 50px;
     display: flex;
 }
-.c-left{
+
+.c-left {
     flex: 1;
 }
-.c-right{
+
+.c-right {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,7 @@
     justify-content: center;
 }
 
-.c-titles
-{
+.c-titles {
     position: center;
     font-size: 60px;
     width: 100%;
@@ -37,38 +36,33 @@
     height: 100px;
 }
 
-.c-info-item
-{
-display: flex;
-align-items: center;
-margin: 50px 0px;
-font-weight: 300;
-width: 50%;
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 50%;
 }
 
-.c-icon
-{
+.c-icon {
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
 
-.c-descs
-{
+.c-descs {
     font-weight: 200;
     font-size: 15px;
 }
 
-form{
+form {
     margin-top: 30px;
     width: 75%;
 }
-a-href
-{
-    
-}
 
-input{
+a-href {}
+
+input {
     width: 80%;
     height: 50px;
     border: none;
@@ -77,14 +71,15 @@ input{
     font-size: 25px;
     padding-left: 10px;
 }
-textarea{
+
+textarea {
     width: 100%;
     margin: 10px 0px;
     font-size: 25px;
     padding-left: 10px;
 }
 
-button{
+button {
     border: none;
     padding: 15px;
     background-color: #59b256;
@@ -93,28 +88,27 @@ button{
     cursor: pointer;
 }
 
-label{
+label {
     font-weight: 500;
     font-size: 25px;
 }
 
-@media screen and (max-width: 480px)
- {
-     .c-wrapper{
-         flex-direction: column;
-         padding: 0px 50px;
-     }
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
 
-     .c-title{
-         font-size: 30px;
-     }
+    .c-title {
+        font-size: 30px;
+    }
 
-     .c-info-item{
-         margin: 20px 0px;
-         width: 100%;
-     }
+    .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+    }
 
-    .c-desc{
+    .c-desc {
         display: none;
     }
 
@@ -124,16 +118,16 @@ label{
         flex-wrap: wrap;
     }
 
-    input{
+    input {
         width: 35%;
         height: 40px;
         margin: 10px;
         margin-left: 0;
     }
 
-    button{
+    button {
         margin-top: 10px;
     }
 
-    
+
 }

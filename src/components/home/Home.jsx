@@ -5,15 +5,15 @@ import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
-    
+
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
-        <a id="HomePage"></a>
+          <a id="HomePage"></a>
           <h2 className="i-intro"> Hello, My name is</h2>
           <div className="App">
-     
-    </div>
+
+          </div>
           <h1 className="i-name"> Katie Munoz</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
@@ -25,21 +25,21 @@ function Home() {
           </div>
 
           <p className="i-desc">
-          <Typewriter
-  
-  onInit={(typewriter)=> {
+            <Typewriter
 
-  typewriter
-   
-  .typeString("Welcome to my software developer portfolio website! My goal as a developer is to create innovative and user-friendly software that not only meets but exceeds the expectations of my clients and users. ")
-    
-  .pauseFor(1000)
-  .deleteAll()
-  .typeString("I hope that this portfolio will give you a glimpse into my passion for software development and the value I can bring to your project. If you have any questions or are interested in working together, please don't hesitate to get in touch. Thank you for visiting my portfolio website!")
-  .start();
-  
-  }}
-  />
+              onInit={(typewriter) => {
+
+                typewriter
+
+                  .typeString("Welcome to my software developer portfolio website! My goal as a developer is to create innovative and user-friendly software that not only meets but exceeds the expectations of my clients and users. ")
+
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("I hope that this portfolio will give you a glimpse into my passion for software development and the value I can bring to your project. If you have any questions or are interested in working together, please don't hesitate to get in touch. Thank you for visiting my portfolio website!")
+                  .start();
+
+              }}
+            />
 
           </p>
         </div>

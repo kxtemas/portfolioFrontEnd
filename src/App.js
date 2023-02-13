@@ -20,16 +20,16 @@ const App = () => {
         backgroundColor: darkMode ? "#222" : "white",
         color: darkMode ? "white" : "black",
       }}>
-        <Navbar/>
+      <Navbar />
       <Toggle toggled={toggled} onClick={handelClick} />
-      <Home/>
+      <Home />
       <About />
       <Contact />
-      <Portfolio/>
-  
-    
+      <Portfolio />
+
+
     </div>
-   
+
   );
 };
 
