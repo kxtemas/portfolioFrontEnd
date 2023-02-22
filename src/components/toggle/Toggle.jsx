@@ -2,6 +2,13 @@ import React, { useContext } from "react";
 import "./Toggle.css";
 import { ThemeContext } from "../../context";
 
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
+
 function Toggle({ toggled, onClick }) {
   const theme = useContext(ThemeContext);
 

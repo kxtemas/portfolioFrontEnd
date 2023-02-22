@@ -9,9 +9,14 @@ import { useState, useContext } from "react";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-
-
 import { ThemeContext } from "../../context";
+
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
 function Contact() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;

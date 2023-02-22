@@ -4,6 +4,12 @@ const mg = require('mailgun-js');
 
 dotenv.config();
 
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
 const mailgun = () =>
   mg({
     apiKey: process.env.MAILGUN_API_KEY,

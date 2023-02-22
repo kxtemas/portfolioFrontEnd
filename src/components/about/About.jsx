@@ -4,14 +4,17 @@ import katie from "../../img/katie.JPEG";
 import Typewriter from "typewriter-effect";
 function About() {
 
-
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */
   return (
 
     <div>
-
       <a id="About"></a>
       <div className="a" >
-
         <div className="a-left">
           <div className="a-card bg"></div>
           <div className="a-card">

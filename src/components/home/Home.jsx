@@ -4,6 +4,12 @@ import logo from "../../img/logo.png";
 import Typewriter from "typewriter-effect";
 
 function Home() {
+  /**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
   return (
 
     <div className="i">

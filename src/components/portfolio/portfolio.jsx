@@ -2,6 +2,14 @@ import React from "react";
 import "./portfolio.css";
 import Github from "../../img/github.png";
 import Link from "../../img/Resume.pdf";
+
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
+
 function Portfolio() {
   return (
     <div className="c">

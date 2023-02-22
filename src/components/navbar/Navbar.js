@@ -1,6 +1,11 @@
 import { useState } from "react"
 import "./Navbar.css"
-
+/**
+ * Date: 02/12/22
+ * @author Katie Munoz
+ * @version 2.
+ *
+ */ 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(true)
 
