@@ -12,6 +12,9 @@ function About() {
  */
   return (
 
+    /*
+Setting up layout of the page
+*/
     <div>
       <a id="About"></a>
       <div className="a" >
@@ -23,16 +26,17 @@ function About() {
         </div>
 
         <div className="a-right">
-
           <h1 className="a-title">About Me</h1>
           <p className="a-sub">
             Let's get to know me!
           </p>
           <p className="a-desc">
-
+  
+        
             <Typewriter
-
-
+    /*
+Added a typewriter extension to create the animation of someone typing
+*/
               onInit={(typewriter) => {
                 typewriter
                   .changeDelay(40)

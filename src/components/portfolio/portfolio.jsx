@@ -13,24 +13,31 @@ import Link from "../../img/Resume.pdf";
 function Portfolio() {
   return (
     <div className="c">
-      <div className="c-bg"></div>
+            <div className="e-bg"></div>
+      <div className="d-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
           <a id="Portfolio"></a>
 
           <h1 className="c-titles">Katie Munoz</h1>
-          <a href={Link} download="resume.pdf">Resume</a>
-          <div className="c-info">
-            <div className="c-info-item">
-              <p className="c-left">
-                <b>Contact</b>
-                <p></p>
-                Phone Number: 623-238-2542  <br />
-                Email: kxtemas01@gmail.com
-                <br />
+          <div className="d-right">
+          <form action={Link} download="resume.pdf">
+         <button type="submit">Download Resume</button>
+         </form>
+         </div>
+         <br/>
+          <div className="d-info">
+            <div className="d-info-item">
+              <p className="d-left">
+                <b><h3>Contact</h3></b>
+               <h5>Phone Number:</h5> 623-238-2542 
+                <br/>
+                <h5>Email:</h5> kxtemas01@gmail.com
+              
+              <br/>
                 <a href="https://www.linkedin.com/in/katiemunoz01" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
               </p>
-
+        
             </div>
           </div>
           <p className="c-descs">

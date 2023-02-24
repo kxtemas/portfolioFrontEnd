@@ -57,15 +57,6 @@ form {
     width: 75%;
 }
 
-input {
-    width: 80%;
-    height: 50px;
-    border: none;
-    border-bottom: 1px solid black;
-    margin: 10px 0px;
-    font-size: 25px;
-    padding-left: 10px;
-}
 
 textarea {
     width: 100%;
@@ -75,12 +66,13 @@ textarea {
 }
 
 button {
-    border: none;
-    padding: 15px;
-    background-color: #59b256;
+    background-color: #86b28f;
     color: white;
-    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-style: "Copperplate";
 }
 
 label {
@@ -113,16 +105,34 @@ label {
         flex-wrap: wrap;
     }
 
-    input {
-        width: 35%;
-        height: 40px;
-        margin: 10px;
-        margin-left: 0;
-    }
+
 
     button {
         margin-top: 10px;
     }
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      
 
 
 }

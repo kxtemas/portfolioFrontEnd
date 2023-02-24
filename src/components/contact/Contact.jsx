@@ -21,6 +21,9 @@ function Contact() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
+    /*
+Setting up mailgun const
+*/
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -28,6 +31,10 @@ function Contact() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+
+    /*
+Error message for when something is null
+*/
     if (!email || !subject || !message) {
       return toast.error('Please fill email, subject and message');
     }
@@ -39,6 +46,7 @@ function Contact() {
         message,
       });
       setLoading(false);
+    /* success message for when it sents*/
       toast.success(data.message);
     } catch (err) {
       setLoading(false);
@@ -51,6 +59,7 @@ function Contact() {
   };
 
   return (
+      /* setting up layout for contact information*/
     <div className="c">
       <ToastContainer position="bottom-center" limit={1} />
       <div className="c-bg"></div>
@@ -69,7 +78,7 @@ function Contact() {
             </div>
             <div className="c-info-item">
               <img src={Address} className="c-icon" alt="address" />
-              Surprize, AZ
+              Surprise, AZ
             </div>
             <div className="c-info-item">
               <a href="https://github.com/kxtemas"><img src={Github} className="c-icon" alt="github" /></a>
@@ -89,20 +98,25 @@ function Contact() {
             I would be happy to hear from you and answer any questions you may have. I look forward to connecting with you soon!
           </p>
           <p></p>
-
+       
           <form onSubmit={submitHandler}>
+       
             <label htmlFor="email">Email  </label>
+            <br/>
             <input
+              /* setting up form for contacts using mailgun*/
               id="email"
               style={{ backgroundColor: darkMode && "#333" }}
               onChange={(e) => setEmail(e.target.value)}
-              type="email"
+              type="text"
               placeholder="email"
               name="email"
             />
             <p></p>
             <label htmlFor="subject">Subject  </label>
+            <br/>
             <input
+                /* setting up form for contacts using mailgun*/
               id="subject"
               type="text"
               onChange={(e) => setSubject(e.target.value)}
@@ -113,6 +127,7 @@ function Contact() {
             <p></p>
             <label htmlFor="message">Message</label>
             <textarea
+                /* setting up form for contacts using mailgun*/
               id="message"
               onChange={(e) => setMessage(e.target.value)}
               style={{ backgroundColor: darkMode && "#333" }}
@@ -122,7 +137,9 @@ function Contact() {
             ></textarea>
             <div>
               <label></label>
-              <button disabled={loading} type="submit">
+           
+              <button disabled={loading} type="submit">  
+  
                 {loading ? 'Sending...' : 'Submit'}
               </button>
             </div>
