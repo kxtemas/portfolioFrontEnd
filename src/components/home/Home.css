@@ -42,7 +42,8 @@
 
 .i-title-wrapper {
     height: 100%;
-    animation: move 8s ease-in-out infinite alternate
+    animation: move 8s ease-in-out infinite alternate;
+    
 }
 
 @keyframes move {
@@ -110,14 +111,15 @@
         height: 100%;
 
     }
+  
 
-
+.i-title-wrapper{
+    overflow:hidden;
+}
 
 }
 
-.i-desc {
-    font-size: 20px;
-}
+
 
 
 /* @media 
