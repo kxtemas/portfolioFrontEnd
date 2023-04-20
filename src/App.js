@@ -6,6 +6,9 @@ import Toggle from "./components/toggle/Toggle.jsx";
 import { ThemeContext } from "./context.js";
 import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/portfolio.jsx";
+import axios from 'axios'
+
+
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -13,8 +16,15 @@ const App = () => {
   const [toggled, setToggled] = useState(false);
   const handelClick = () => {
     setToggled((s) => !s);
+
+   
   };
+
+
+   
+
   return (
+ 
     <div
       style={{
         backgroundColor: darkMode ? "#222" : "white",
@@ -31,6 +41,10 @@ const App = () => {
     </div>
 
   );
+  
+
+
 };
+
 
 export default App;

@@ -7,6 +7,7 @@ function Home() {
   /**
  * Date: 02/12/22
  * @author Katie Munoz
+ * Description: The Home page where it includes the logo, type effect and toggle with the navbaar and a responsive page with a hamburger navbar option. The toggle allows a light/dark background that changes the font color and background to white or black.
  * @version 2.
  *
  */ 
