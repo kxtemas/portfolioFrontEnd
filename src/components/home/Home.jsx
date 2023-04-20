@@ -7,6 +7,7 @@ function Home() {
   /**
  * Date: 02/12/22
  * @author Katie Munoz
+ * Description: The Home page where it includes the logo, type effect and toggle with the navbaar and a responsive page with a hamburger navbar option. The toggle allows a light/dark background that changes the font color and background to white or black.
  * @version 2.
  *
  */ 
@@ -16,37 +17,25 @@ function Home() {
       <div className="i-left">
         <div className="i-left-wrapper">
           <a id="HomePage"></a>
-          <h2 className="i-intro"> Hello, My name is</h2>
+         
           <div className="App">
 
  
-          <h1 className="i-name"> Katie Munoz</h1>
-          <div className="i-title">
-            <div className="i-title-wrapper">
-              <div className="i-title-item">Student</div>
-              <div className="i-title-item">Web Designer</div>
-              <div className="i-title-item">Front End Developer</div>
-              <div className="i-title-item">Software Developer</div>
-            </div>
-          </div>
+          <h1 className="i-name"> Welcome to KatieDev</h1>
           </div>
 
           <p className="i-desc">
-            <Typewriter
-
-              onInit={(typewriter) => {
-
+          <Typewriter
+          onInit={(typewriter) => {
                 typewriter
-
-                  .typeString("Welcome to my software developer portfolio website! My goal as a developer is to create innovative and user-friendly software that not only meets but exceeds the expectations of my clients and users. ")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("I hope that this portfolio will give you a glimpse into my passion for software development and the value I can bring to your project. If you have any questions or are interested in working together, please don't hesitate to get in touch. Thank you for visiting my portfolio website!")
+                  .changeDelay(20)
+                  .typeString("The creation of “KatieDev” , a portfolio Webpage utilizing what students have learned as a Software Development major at Grand Canyon University. The project is meant to advertise students to potential hiring companies with a unique “resume”. The webpage will include the courses students have taken over under the degree program with description to each. A glimpse of projects I have completed outside and inside the program with a description to each. A separate page that list the skills and abilities students have possessed with an introduction to the student . A contact page will then be available with a contact from via email and links to social media such as Linkedln.") 
+                  .pauseFor(10000)
                   .start();
 
               }}
-            />
-
+              />
+              
           </p>
         </div>
       </div>

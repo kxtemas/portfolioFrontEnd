@@ -14,6 +14,7 @@ import { ThemeContext } from "../../context";
 /**
  * Date: 02/12/22
  * @author Katie Munoz
+ * description: This page uses mailgun to be able to send an email to myself from an employer. The contact form is responsive and includes data validation to be able to send a successfuk email.
  * @version 2.
  *
  */ 
