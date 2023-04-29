@@ -17,7 +17,7 @@ The React application will include components and use AXIOS as the HTTP Client t
 
 
 ### Logical Diagram
-There are three tiers to the logical solution being the browser, front end and backend. The design includes the React Components, Spring Boot MYC layers and MongoDB. The backend will create the REST API’s while the front end, React will use AXIOS to handle the HTTP Requests. The backend include the three layers, presentation, business and data layer to show how the Rest Service will be created with each file.!
+There are three tiers to the logical solution being the browser, front end and backend. The design includes the React Components, Spring Boot MYC layers and MongoDB. The backend will create the REST API’s while the front end, React will use AXIOS to handle the HTTP Requests. The backend include the three layers, presentation, business and data layer to show how the Rest Service will be created with each file. 
 ![image](https://user-images.githubusercontent.com/71146102/235296931-a3681088-fc46-4992-ad95-24dfc1b38d32.png)
 
 
@@ -44,14 +44,14 @@ Our team will be using MongoDB is create the collections in the database. This i
 
  
 
-##Service API Design:
+## Service API Design:
 
 Link: https://app.swaggerhub.com/apis-docs/kxtemas/SeniorCapstone/1#/View
 Basic HTTP Auth will be used to bring security to the REST API’s implemented in sprint boot. This will be done by adding the required dependencies and configuring Spring Security to enable authentication and authorization support. Below is a UML diagram of the classes in the spring boot application.
 
  
 
-##NFR’s (Security Design, etc.):
+## NFR’s (Security Design, etc.):
 
 Availability is crucial to sustain when an application has been deployed onto the web. The webpage is to be accessible to a user at any time which also puts reliability and maintainability into play. Our standard to keep the webpage up and running at all times of the day with no downtime. To assure this, our team will have implemented Uptime Robot to connect to our domain to receive instant messages when the application is no longer available. Below is an example of a notification when the webpage is in downtime. By receiving these notifications instantly, out team will be able to resolve any issues and bugs by viewing the Logging console in the AWS CLI from the Log4J log provider.
 
