@@ -8,7 +8,7 @@ function About() {
  * Date: 02/12/22
  * @author Katie Munoz
  * @version 2.
- *
+ *This page will give information about myself with an image.
  */
   return (
 

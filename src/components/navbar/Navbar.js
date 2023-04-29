@@ -32,9 +32,7 @@ export default function Navbar() {
             <a href="#HOMEPAGE"> Home</a>
 
           </li>
-          <li>
-            <a href="#Projectinfo"> Project Information</a>
-          </li>
+       
         <li>
           <a href="#Courses">Courses</a>
         </li>

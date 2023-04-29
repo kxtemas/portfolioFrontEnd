@@ -136,9 +136,10 @@ Error message for when something is null
               placeholder="Message"
               name="message"
             ></textarea>
+
             <div>
               <label></label>
-           
+          
               <button disabled={loading} type="submit">  
   
                 {loading ? 'Sending...' : 'Submit'}
